@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { UserProps } from '../types/user';
 import { Search } from '../components/Search';
@@ -12,7 +12,7 @@ export const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const loadUser = async (userName: string) => {
-    setIsLoading(true)
+    setIsLoading(true);
     setError(false);
     setUser(null);
 
@@ -20,7 +20,7 @@ export const Home = () => {
 
     const data = await res.json();
 
-    setIsLoading(false)
+    setIsLoading(false);
 
     if (res.status === 404) {
       setError(true);
@@ -39,6 +39,10 @@ export const Home = () => {
 
     setUser(userData);
   };
+
+  useEffect(() => {
+    loadUser('gio98sp');
+  }, []);
 
   return (
     <div>

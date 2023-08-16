@@ -1,20 +1,20 @@
 import { KeyboardEvent, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 
-import classes from './Search.module.css'
+import classes from './Search.module.css';
 
 type SearchProps = {
   loadUser: (userName: string) => Promise<void>;
 };
 
 export const Search = ({ loadUser }: SearchProps) => {
-  const [userName, setUserName] = useState('');
+  const [userName, setUserName] = useState('gio98sp');
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if(e.key === 'Enter') {
-      loadUser(userName)
+    if (e.key === 'Enter') {
+      loadUser(userName);
     }
-  }
+  };
 
   return (
     <div className={classes.search}>
@@ -33,9 +33,7 @@ export const Search = ({ loadUser }: SearchProps) => {
         <button onClick={() => loadUser(userName)}>
           <BsSearch />
         </button>
-
       </div>
-
     </div>
   );
 };
