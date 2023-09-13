@@ -1,27 +1,31 @@
-# React + TypeScript + Vite
+## GitHub-Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src='./public/github-finder.png' width='400'><br />
 
-Currently, two official plugins are available:
+Criei um buscador de usuários do GitHub feito com **React**, **TypeScript** e a API do **GitHub**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Apenas para estudos e adquirir experiência na prática.
 
-## Expanding the ESLint configuration
+Acesse o projeto aqui: [GitHub-Finder](https://github-finder-gio98sp.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Executando o projeto
 
-- Configure the top-level `parserOptions` property like this:
+Para clonar e rodar o projeto siga os passos abaixo:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- Passo 1 - Clone o repositório em uma pasta executando o comando:
+
+```bash
+git clone https://github.com/gio98sp/github_finder_react_typescript.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Passo 2 - Instale as dependências:
+
+```bash
+npm i
+```
+
+- Passo 3 - Execute no modo de desenvolvimento:
+
+```bash
+npm run dev
+```
