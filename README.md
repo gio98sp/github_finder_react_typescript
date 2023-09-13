@@ -6,7 +6,7 @@ Criei um buscador de usuários do GitHub feito com **React**, **TypeScript** e a
 
 Apenas para estudos e adquirir experiência na prática.
 
-Acesse o projeto aqui: [GitHub-Finder](https://github-finder-gio98sp.vercel.app/)
+Acesse o projeto aqui: [GitHub-Finder](https://github-finder-react-typescript-gio98sp.vercel.app/)
 
 ## Executando o projeto
 
